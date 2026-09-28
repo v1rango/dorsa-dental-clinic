@@ -1,0 +1,290 @@
+/* ==========================================================================
+   کلینیک تخصصی دندانپزشکی و زیبایی دُرسا (Dorsa Dental Clinic)
+   طراحی و معماری وب‌سایت: آراد وفایی (aradvafaee.ir)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-sans: 'Vazirmatn', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Theme: Clean Medical Light (Default for Healthcare) */
+  --bg-body: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #f0fdfa;
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --bg-glass: rgba(255, 255, 255, 0.85);
+
+  --border-color: rgba(14, 165, 233, 0.12);
+  --border-color-hover: rgba(14, 165, 233, 0.35);
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-sub: #64748b;
+
+  /* Medical Dental Palette */
+  --primary-cyan: #0ea5e9;       /* Medical Sky Cyan */
+  --primary-teal: #0d9488;       /* Clinical Teal */
+  --primary-emerald: #10b981;    /* Sterile Clean Emerald */
+  --accent-gold: #f59e0b;        /* Smile Aesthetic Gold */
+  --accent-glow: rgba(14, 165, 233, 0.18);
+
+  --shadow-card: 0 10px 30px -5px rgba(14, 165, 233, 0.08);
+  --shadow-float: 0 20px 40px -10px rgba(13, 148, 136, 0.15);
+}
+
+[data-theme="dark"] {
+  --bg-body: #070d17;
+  --bg-surface: #0f172a;
+  --bg-surface-elevated: #132238;
+  --bg-card: rgba(15, 23, 42, 0.85);
+  --bg-glass: rgba(15, 23, 42, 0.8);
+
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-color-hover: rgba(14, 165, 233, 0.45);
+
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-sub: #64748b;
+
+  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  --shadow-float: 0 20px 40px -10px rgba(14, 165, 233, 0.2);
+}
+
+/* Base Configuration */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  direction: rtl;
+  text-align: right;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+}
+
+/* Custom Medical Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-body);
+}
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 9999px;
+  border: 2px solid var(--bg-body);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-cyan);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+}
+
+.glass-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card:hover {
+  border-color: var(--border-color-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-float);
+}
+
+/* Interactive Before / After Image Slider */
+.ba-slider-container {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 20px;
+  user-select: none;
+  touch-action: pan-y;
+  cursor: ew-resize;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+.ba-slider-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.ba-after-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  border-left: 3px solid #ffffff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+}
+.ba-after-container .ba-slider-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ba-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-teal);
+  font-weight: 900;
+  cursor: ew-resize;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Medical Button Styles */
+.btn-medical {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0d9488 100%);
+  color: #ffffff !important;
+  font-weight: 700;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 18px rgba(14, 165, 233, 0.35);
+}
+.btn-medical:hover {
+  background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+  box-shadow: 0 8px 25px rgba(14, 165, 233, 0.5);
+  transform: translateY(-2px);
+}
+.btn-medical:active {
+  transform: translateY(0);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+  color: #ffffff !important;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.35);
+}
+.btn-gold:hover {
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes pulseHeart {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+.animate-pulse-heart {
+  animation: pulseHeart 3s ease-in-out infinite;
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+.animate-float {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+/* Gradient Texts */
+.gradient-text-medical {
+  background: linear-gradient(135deg, #0284c7 0%, #0d9488 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+[data-theme="dark"] .gradient-text-medical {
+  background: linear-gradient(135deg, #38bdf8 0%, #2dd4bf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-gold {
+  background: linear-gradient(135deg, #f59e0b 0%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Background Gradients */
+.medical-bg-pattern {
+  background-image: radial-gradient(rgba(14, 165, 233, 0.08) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+}
+[data-theme="dark"] .medical-bg-pattern {
+  background-image: radial-gradient(rgba(14, 165, 233, 0.15) 1.5px, transparent 1.5px);
+}
+
+/* Toast Notifications */
+#toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.toast {
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid var(--primary-cyan);
+  border-radius: 14px;
+  padding: 14px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: toastSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+[data-theme="dark"] .toast {
+  background: #0f172a;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+@keyframes toastSlideIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Developer Card in Footer */
+.developer-card {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.05), rgba(13, 148, 136, 0.08), rgba(255, 255, 255, 0.7));
+  border: 1px solid rgba(14, 165, 233, 0.25);
+  box-shadow: 0 10px 25px rgba(14, 165, 233, 0.08);
+}
+[data-theme="dark"] .developer-card {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.08), rgba(13, 148, 136, 0.12), rgba(15, 23, 42, 0.85));
+  border-color: rgba(14, 165, 233, 0.3);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}

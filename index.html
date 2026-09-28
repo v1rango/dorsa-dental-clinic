@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="light" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کلینیک تخصصی دندانپزشکی و زیبایی دُرسا | طراحی لبخند و ایمپلنت دیجیتال</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="کلینیک فوق‌تخصصی دندانپزشکی دُرسا؛ مرکز پیشرو در ایمپلنت دیجیتال بدون جراحی، طراحی لبخند سرامیکی و ونیر کامپوزیت با شرایط پرداخت اقساطی و گارانتی کتبی.">
+  <meta name="keywords" content="کلینیک دندانپزشکی, ایمپلنت دیجیتال, لمینت دندان, ونیر کامپوزیت, ارتودنسی نامرئی, دندانپزشکی اقساطی, کلینیک دندانپزشکی دُرسا, آراد وفایی">
+  <meta name="author" content="آراد وفایی | Arad Vafaee (aradvafaee.ir)">
+
+  <meta property="og:title" content="کلینیک تخصصی دندانپزشکی و زیبایی دُرسا">
+  <meta property="og:description" content="مرکز مجهز دندانپزشکی بدون درد، ایمپلنت فوری و طراحی هالیوودی لبخند با اسکنر سه‌بعدی.">
+  <meta property="og:image" content="assets/images/hero-dentist.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['class', '[data-theme="dark"]'],
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Vazirmatn', 'sans-serif'],
+          },
+          colors: {
+            medical: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              200: '#99f6e4',
+              300: '#5eead4',
+              400: '#2dd4bf',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+            },
+            dental: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/arad-avatar.webp" type="image/webp">
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col antialiased selection:bg-dental-500 selection:text-white medical-bg-pattern">
+
+  <!-- =========================================================================
+       1. نوار اورژانس و نوبت‌دهی بالای صفحه (Emergency & Hotline Bar)
+       ========================================================================= -->
+  <div class="bg-gradient-to-r from-dental-700 via-medical-700 to-dental-800 text-white text-xs py-2 px-4 select-none relative z-40">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/20 text-white font-bold text-[11px] animate-pulse">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          اورژانس دندانپزشکی
+        </span>
+        <span class="hidden sm:inline text-slate-100">پاسخگویی و تسکین فوری درد دندان در تمامی ساعات شبانه‌روز</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-bold">
+        <a href="tel:02122334455" class="hover:text-cyan-200 transition-colors flex items-center gap-1">
+          <span>تلفن تماس:</span>
+          <span dir="ltr" class="font-mono">۰۲۱-۲۲۳۳۴۴۵۵</span>
+        </a>
+        <span class="text-white/40">|</span>
+        <a href="https://wa.me/989394606013" target="_blank" class="hover:text-emerald-300 transition-colors flex items-center gap-1">
+          <span>مشاوره واتساپ:</span>
+          <span dir="ltr" class="font-mono text-emerald-300">۰۹۳۹۴۶۰۶۰۱۳</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. هدر شیشه‌ای و ناوبری (Header & Navigation)
+       ========================================================================= -->
+  <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 glass-panel">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- لوگو و نشان کلینیک دُرسا -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-dental-500 to-medical-600 flex items-center justify-center p-0.5 shadow-md shadow-dental-500/25 group-hover:scale-105 transition-transform">
+          <div class="w-full h-full bg-white dark:bg-slate-900 rounded-[14px] flex items-center justify-center text-dental-600 dark:text-dental-400 font-black">
+            <!-- آیکون وکتور دندان شکیل -->
+            <svg class="w-6 h-6 text-dental-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C8.5 2 6 4.5 6 8c0 3.5 1.5 6 3 10 .8 2 2 4 3 4s2.2-2 3-4c1.5-4 3-6.5 3-10 0-3.5-2.5-6-6-6z"/>
+              <path d="M10 7c.5-1 1-1.5 2-1.5s1.5.5 2 1.5"/>
+            </svg>
+          </div>
+        </div>
+        <div>
+          <span class="text-xl sm:text-2xl font-black tracking-tight text-slate-900 dark:text-white block">کلینیک دندانپزشکی دُرسا</span>
+          <span class="text-[11px] font-semibold text-dental-600 dark:text-dental-400">مرکز تخصصی ایمپلنت و زیبایی لبخند</span>
+        </div>
+      </a>
+
+      <!-- منوی اصلی ناوبری -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-bold text-slate-600 dark:text-slate-300">
+        <a href="#hero" class="hover:text-dental-600 dark:hover:text-dental-400 transition-colors">صفحه اصلی</a>
+        <a href="#services" class="hover:text-dental-600 dark:hover:text-dental-400 transition-colors">خدمات تخصصی</a>
+        <a href="#transformation" class="hover:text-dental-600 dark:hover:text-dental-400 transition-colors flex items-center gap-1.5">
+          <span>گالری قبل و بعد</span>
+          <span class="px-1.5 py-0.5 rounded text-[10px] bg-amber-500/10 text-amber-600 border border-amber-500/20 font-bold">زنده</span>
+        </a>
+        <a href="#calculator" class="hover:text-dental-600 dark:hover:text-dental-400 transition-colors">محاسبه اقساط</a>
+        <a href="#doctors" class="hover:text-dental-600 dark:hover:text-dental-400 transition-colors">پزشکان متخصص</a>
+        <a href="#tech" class="hover:text-dental-600 dark:hover:text-dental-400 transition-colors">تجهیزات مدرن</a>
+        <a href="#contact" class="hover:text-dental-600 dark:hover:text-dental-400 transition-colors">تماس و آدرس</a>
+      </nav>
+
+      <!-- اقدامات سریع هدر -->
+      <div class="flex items-center gap-3">
+        <!-- کلید تغییر تم -->
+        <button class="theme-toggle-btn p-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 hover:bg-slate-100 dark:hover:bg-white/10 transition-all flex items-center justify-center cursor-pointer" title="تغییر حالت تم" aria-label="تغییر تم">
+          <span class="theme-icon">
+            <svg class="w-4 h-4 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </span>
+        </button>
+
+        <!-- دکمه رزرو نوبت آنلاین -->
+        <button onclick="openBookingModal()" class="hidden sm:inline-flex btn-medical px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold items-center gap-2 cursor-pointer shadow-md">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <span>رزرو آنلاین نوبت و مشاوره</span>
+        </button>
+
+        <!-- همبرگر موبایل -->
+        <button id="mobile-menu-btn" class="p-2.5 rounded-xl border border-slate-200 dark:border-white/10 lg:hidden text-slate-700 dark:text-slate-300" aria-label="منوی موبایل">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- منوی بازشونده در موبایل -->
+  <div id="mobile-menu-drawer" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-xl lg:hidden flex flex-col justify-between p-6">
+    <div class="flex items-center justify-between border-b border-white/10 pb-4">
+      <div class="flex items-center gap-3">
+        <span class="w-3 h-3 rounded-full bg-dental-500"></span>
+        <span class="font-black text-lg text-white">کلینیک دندانپزشکی دُرسا</span>
+      </div>
+      <button id="mobile-menu-close" class="p-2 rounded-lg bg-white/5 text-slate-300 hover:text-white" aria-label="بستن منو">✕</button>
+    </div>
+
+    <nav class="flex flex-col gap-4 text-base font-bold text-slate-200 py-6">
+      <a href="#hero" class="mobile-nav-link py-2 border-b border-white/5 flex items-center justify-between">صفحه اصلی <span>←</span></a>
+      <a href="#services" class="mobile-nav-link py-2 border-b border-white/5 flex items-center justify-between">خدمات دندانپزشکی <span>←</span></a>
+      <a href="#transformation" class="mobile-nav-link py-2 border-b border-white/5 flex items-center justify-between">اسلایدر قبل و بعد لبخند <span>←</span></a>
+      <a href="#calculator" class="mobile-nav-link py-2 border-b border-white/5 flex items-center justify-between">محاسبه‌گر هزینه و اقساط <span>←</span></a>
+      <a href="#doctors" class="mobile-nav-link py-2 border-b border-white/5 flex items-center justify-between">پزشکان متخصص <span>←</span></a>
+      <a href="#contact" class="mobile-nav-link py-2 flex items-center justify-between">تماس و نوبت‌دهی <span>←</span></a>
+    </nav>
+
+    <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+      <button onclick="openBookingModal()" class="w-full btn-medical py-3.5 rounded-xl font-bold text-sm text-center">
+        رزرو آنلاین نوبت و مشاوره رایگان
+      </button>
+      <div class="flex items-center justify-between text-xs text-slate-400 pt-2">
+        <span>تغییر تم:</span>
+        <button class="theme-toggle-btn px-3 py-1 rounded-lg border border-white/10 text-slate-300">
+          روز / شب
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       3. بخش هیرو (Hero Section) با طراحی لوکس پزشکی و حس آرامش
+       ========================================================================= -->
+  <section id="hero" class="relative pt-12 pb-20 sm:pt-20 sm:pb-28 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    
+    <!-- درخشش‌های پس‌زمینه فیروزه‌ای و آبی پزشکی -->
+    <div class="absolute top-10 -right-40 w-96 h-96 bg-dental-400/20 rounded-full blur-[130px] pointer-events-none"></div>
+    <div class="absolute bottom-10 -left-40 w-96 h-96 bg-medical-400/20 rounded-full blur-[130px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- محتوای سمت راست -->
+      <div class="lg:col-span-7 space-y-6 text-right">
+        
+        <!-- بج رضایت مراجعین -->
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-dental-50 dark:bg-slate-800/80 border border-dental-200 dark:border-dental-500/30 text-xs font-bold text-slate-700 dark:text-slate-200 shadow-sm">
+          <span class="flex text-amber-400">★★★★★</span>
+          <span class="text-dental-600 dark:text-dental-400 font-extrabold">امتیاز ۴.۹ از ۵</span>
+          <span class="text-slate-400">•</span>
+          <span>بیش از ۱,۴۰۰ لبخند موفق و رضایت‌بخش</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-slate-950 dark:text-white">
+          لبخندی درخشان با
+          <span class="gradient-text-medical block mt-1">پیشرفته‌ترین فناوری دندانپزشکی</span>
+          بدون درد و با شرایط اقساطی
+        </h1>
+
+        <p class="text-sm sm:text-base lg:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl">
+          در <strong class="text-dental-600 dark:text-dental-400">کلینیک تخصصی دُرسا</strong>، زیبایی و سلامت دندان‌های شما را با اسکن سه‌بعدی دیجیتال، متریال اورجینال آلمانی و سوئیسی، و بی‌حسی کامپیوتری بدون سوزن تضمین می‌کنیم.
+        </p>
+
+        <!-- دکمه‌های اقدام CTA -->
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <button onclick="openBookingModal()" class="btn-medical px-7 py-3.5 rounded-xl font-bold text-sm sm:text-base flex items-center gap-2.5 cursor-pointer shadow-lg">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>دریافت نوبت ویزیت و اسکن رایگان</span>
+          </button>
+
+          <a href="#transformation" class="px-6 py-3.5 rounded-xl border border-slate-300 dark:border-white/10 hover:border-dental-500 bg-white dark:bg-white/5 font-bold text-sm text-slate-700 dark:text-slate-200 transition-all flex items-center gap-2">
+            <svg class="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/></svg>
+            <span>مشاهده نتایج قبل و بعد</span>
+          </a>
+
+          <a href="#calculator" class="px-5 py-3.5 rounded-xl border border-medical-500/30 bg-medical-50 dark:bg-medical-950/40 text-medical-700 dark:text-medical-300 font-bold text-xs sm:text-sm hover:bg-medical-100 transition-all flex items-center gap-1.5">
+            <span>محاسبه اقساط ماهیانه ←</span>
+          </a>
+        </div>
+
+        <!-- تاییدیه و خدمات رایگان -->
+        <div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-slate-200 dark:border-white/10 text-xs text-slate-600 dark:text-slate-300">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span>معاینه و مشاوره اولیه رایگان</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span>گارانتی کتبی ۵ تا ۱۰ ساله</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span>شرایط پرداخت اقساطی بدون سود</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span>استریلیزاسیون بیمارستانی کلاس B</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- تصویر Hero پزشک و کلینیک با کادر شکیل -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative rounded-3xl overflow-hidden glass-card p-2 group shadow-2xl">
+          <div class="relative h-[400px] sm:h-[480px] w-full rounded-2xl overflow-hidden">
+            <img src="assets/images/hero-dentist.jpg" alt="پزشک متخصص دندانپزشکی در حال معاینه و درمان" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+
+            <!-- پلاک زنده در پایین عکس -->
+            <div class="absolute bottom-4 right-4 left-4 p-4 rounded-2xl glass-panel border-white/20 text-white backdrop-blur-md">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-xs font-black text-cyan-300">اتاق جراحی دیجیتال VIP</span>
+                <span class="text-[10px] bg-emerald-500/80 text-white px-2.5 py-0.5 rounded-full font-bold">۱۰۰٪ بدون درد</span>
+              </div>
+              <p class="text-xs text-slate-200">کاشت ایمپلنت یک روزه به روش پانچ بدون جراحی و خونریزی</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- کارت شناور تجربه مراجعین -->
+        <div class="absolute -bottom-6 -right-6 hidden sm:block p-4 rounded-2xl glass-panel border border-dental-500/30 shadow-xl animate-float">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-dental-500 to-medical-500 text-white flex items-center justify-center font-black text-xl shadow-md">
+              ✓
+            </div>
+            <div>
+              <span class="text-[11px] text-slate-500 dark:text-slate-400 block font-semibold">تضمین اصالت متریال:</span>
+              <span class="text-xs font-black text-slate-900 dark:text-white">کیت‌های پلمپ اروپایی با هولوگرام</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. آمار کلینیک دُرسا (Statistics)
+       ========================================================================= -->
+  <section id="stats-section" class="py-12 border-y border-slate-200 dark:border-white/5 bg-white/60 dark:bg-slate-900/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        
+        <div class="p-6 rounded-2xl glass-card">
+          <div class="text-3xl sm:text-4xl font-black font-mono text-dental-600 dark:text-dental-400 flex items-center justify-center gap-1">
+            <span>+</span><span class="stat-counter" data-target="15000">۰</span>
+          </div>
+          <span class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-semibold mt-2 block">درمان موفق دندانپزشکی</span>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card">
+          <div class="text-3xl sm:text-4xl font-black font-mono text-medical-600 dark:text-medical-400 flex items-center justify-center gap-1">
+            <span>+</span><span class="stat-counter" data-target="4200">۰</span>
+          </div>
+          <span class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-semibold mt-2 block">ایمپلنت کاشته شده موفق</span>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card">
+          <div class="text-3xl sm:text-4xl font-black font-mono text-amber-500 flex items-center justify-center gap-1">
+            <span>+</span><span class="stat-counter" data-target="12">۰</span>
+          </div>
+          <span class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-semibold mt-2 block">متخصص و جراح فک و زیبایی</span>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card">
+          <div class="text-3xl sm:text-4xl font-black font-mono text-emerald-500 flex items-center justify-center gap-1">
+            <span class="stat-counter" data-target="99">۰</span><span>٪</span>
+          </div>
+          <span class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-semibold mt-2 block">رضایت کامل مراجعین از درمان</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. اسلایدر لمسی قبل و بعد اصلاح طرح لبخند (Before / After Transformation)
+       ========================================================================= -->
+  <section id="transformation" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+    
+    <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 text-xs font-bold">
+        <span>✨</span> معجزه هنر و تکنولوژی در طراحی لبخند
+      </div>
+      <h2 class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">اسلایدر تعاملی قبل و بعد اصلاح طرح لبخند</h2>
+      <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+        نشانگر وسط تصویر را با موس یا انگشت به چپ و راست بکشید تا نتیجه شگفت‌انگیز لمینت سرامیکی Emax را مشاهده فرمایید.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      
+      <!-- اسلایدر تعاملی -->
+      <div class="lg:col-span-7">
+        <div id="ba-slider" class="ba-slider-container">
+          
+          <!-- تصویر قبل (زیرین) -->
+          <img src="assets/images/smile-before.jpg" alt="قبل از اصلاح طرح لبخند" class="ba-slider-image">
+          <span class="absolute top-4 left-4 px-3 py-1 rounded-lg bg-black/60 text-white text-xs font-bold backdrop-blur-sm z-10">
+            قبل از درمان (نامنظمی و تغییر رنگ)
+          </span>
+
+          <!-- ظرف تصویر بعد (بالایی) -->
+          <div id="ba-after-container" class="ba-after-container">
+            <img src="assets/images/smile-after.jpg" alt="بعد از اصلاح طرح لبخند با لمینت سرامیکی" class="ba-slider-image">
+            <span class="absolute top-4 right-4 px-3 py-1 rounded-lg bg-emerald-600/90 text-white text-xs font-bold backdrop-blur-sm z-10">
+              بعد از درمان (لمینت سرامیکی هالیوودی)
+            </span>
+          </div>
+
+          <!-- هندل جابجایی -->
+          <div id="ba-handle" class="ba-handle">
+            <svg class="w-5 h-5 text-dental-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l4-4 4 4m0 6l-4 4-4-4"/></svg>
+          </div>
+
+        </div>
+        <div class="text-center mt-3 text-xs text-slate-400">
+          * تصاویر بدون روتوش و از بیماران واقعی کلینیک دُرسا پس از اتمام دوره درمان ثبت شده است.
+        </div>
+      </div>
+
+      <!-- مشخصات این نمونه درمان -->
+      <div class="lg:col-span-5 glass-card p-6 sm:p-8 rounded-3xl space-y-5">
+        <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-white/10">
+          <span class="text-xs font-bold text-dental-600 dark:text-dental-400">مشخصات پرونده درمانی #DR-4820</span>
+          <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
+            ۱۰ سال ضمانت کتبی
+          </span>
+        </div>
+
+        <h3 class="text-xl font-black text-slate-900 dark:text-white">اصلاح طرح لبخند با ۱۰ واحد لمینت سرامیکی Emax</h3>
+        
+        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+          اصلاح به هم ریختگی دندان‌های قدامی، بستن دیاستم (فاصله‌های دندانی) و اصلاح فرم فک با ضخامت فوق نازک ۰.۳ میلیمتر بدون تراش مینای دندان در ۲ جلسه درمانی.
+        </p>
+
+        <div class="space-y-2 text-xs">
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-100 dark:bg-white/5">
+            <span class="text-slate-500">پزشک معالج:</span>
+            <span class="font-bold text-slate-900 dark:text-white">دکتر سارا رادمهر (فلوشیپ زیبایی)</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-100 dark:bg-white/5">
+            <span class="text-slate-500">مدت زمان درمان:</span>
+            <span class="font-bold text-slate-900 dark:text-white">فقط ۲ جلسه (۱۰ روز کاری)</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-100 dark:bg-white/5">
+            <span class="text-slate-500">متریال مصرفی:</span>
+            <span class="font-bold text-amber-600 dark:text-amber-400">سرامیک خالص Ivoclar سوئیس</span>
+          </div>
+        </div>
+
+        <button onclick="openBookingModal('مشاوره برای اصلاح طرح لبخند با لمینت سرامیکی Emax')" class="w-full btn-medical py-3 rounded-xl font-bold text-xs sm:text-sm text-center flex items-center justify-center gap-2 cursor-pointer shadow-md">
+          <span>درخواست مشاوره برای لبخند شما</span>
+          <span>←</span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================================
+       6. خدمات جامع دندانپزشکی (Services Catalog)
+       ========================================================================= -->
+  <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+    
+    <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-medical-500/10 text-medical-600 dark:text-medical-400 border border-medical-500/20 text-xs font-bold">
+        <span>🩺</span> دپارتمان‌های فوق تخصصی کلینیک
+      </div>
+      <h2 class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">خدمات تخصصی دندانپزشکی دُرسا</h2>
+      <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+        ارائه کلیه درمان‌های تخصصی با به‌روزترین تجهیزات دیجیتال و تعرفه مصوب وزارت بهداشت
+      </p>
+    </div>
+
+    <!-- دکمه‌های فیلتر دسته‌بندی -->
+    <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+      <button data-filter="all" class="service-filter-btn active px-5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-cyan-500 text-white shadow-md">
+        تمام خدمات
+      </button>
+      <button data-filter="cosmetic" class="service-filter-btn px-5 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-200 dark:border-white/10 text-slate-600 dark:text-slate-300 hover:border-cyan-400">
+        زیبایی و طراحی لبخند
+      </button>
+      <button data-filter="implant" class="service-filter-btn px-5 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-200 dark:border-white/10 text-slate-600 dark:text-slate-300 hover:border-cyan-400">
+        ایمپلنت دیجیتال فوری
+      </button>
+      <button data-filter="ortho" class="service-filter-btn px-5 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-200 dark:border-white/10 text-slate-600 dark:text-slate-300 hover:border-cyan-400">
+        ارتودنسی نامرئی
+      </button>
+      <button data-filter="pediatric" class="service-filter-btn px-5 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-200 dark:border-white/10 text-slate-600 dark:text-slate-300 hover:border-cyan-400">
+        دندانپزشکی اطفال
+      </button>
+    </div>
+
+    <!-- گرید کارت‌های خدمات -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- خدمت ۱: طراحی لبخند و کامپوزیت -->
+      <div data-category="cosmetic" class="service-card glass-card rounded-3xl overflow-hidden group flex flex-col justify-between">
+        <div>
+          <div class="h-52 overflow-hidden relative">
+            <img src="assets/images/smile-after.jpg" alt="ونیر کامپوزیت و لمینت دندان" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 px-3 py-1 rounded-xl bg-amber-500 text-white text-xs font-bold shadow-md">
+              ضمانت پریدگی و تغییر رنگ
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-lg font-black text-slate-900 dark:text-white">طراحی لبخند هالیوودی (ونیر و لمینت)</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              استفاده از رزین کامپوزیت‌های نانوذره‌ای IPS آلمان و سرامیک‌های Emax با درخشش طبیعی، بدون نیاز به تراش یا آسیب به عاج دندان.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-1">
+              <li class="flex items-center gap-1.5">✓ ماندگاری بالا با پولیش‌های دوره‌ای رایگان</li>
+              <li class="flex items-center gap-1.5">✓ امکان انتخاب طیف رنگی طبیعی تا سوپر بلیچ</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <button onclick="openBookingModal('مشاوره طراحی لبخند و کامپوزیت')" class="w-full py-2.5 rounded-xl text-xs font-bold border border-dental-500 text-dental-600 dark:text-dental-400 hover:bg-dental-500 hover:text-white transition-all">
+            دریافت نوبت و برآورد هزینه
+          </button>
+        </div>
+      </div>
+
+      <!-- خدمت ۲: ایمپلنت دیجیتال فوری -->
+      <div data-category="implant" class="service-card glass-card rounded-3xl overflow-hidden group flex flex-col justify-between">
+        <div>
+          <div class="h-52 overflow-hidden relative">
+            <img src="assets/images/implant-tech.jpg" alt="کاشت دندان ایمپلنت بدون درد" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 px-3 py-1 rounded-xl bg-cyan-600 text-white text-xs font-bold shadow-md">
+              کاشت فوری با روکش موقت
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-lg font-black text-slate-900 dark:text-white">ایمپلنت دیجیتال و بدون جراحی (فلپ‌لس)</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              کاشت پایه تیتانیومی اشترومن سوئیس و مگاژن با راهنمای سه‌بعدی دیجیتال در کمتر از ۱۵ دقیقه، بدون نیاز به برش لثه یا بخیه زدن.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-1">
+              <li class="flex items-center gap-1.5">✓ مناسب افراد با سابقه قند خون و دیابت</li>
+              <li class="flex items-center gap-1.5">✓ گارانتی مادام‌العمر سرتیفیکیت سوئیسی</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <button onclick="openBookingModal('مشاوره ایمپلنت دیجیتال')" class="w-full py-2.5 rounded-xl text-xs font-bold border border-dental-500 text-dental-600 dark:text-dental-400 hover:bg-dental-500 hover:text-white transition-all">
+            دریافت نوبت و برآورد هزینه
+          </button>
+        </div>
+      </div>
+
+      <!-- خدمت ۳: ارتودنسی نامرئی -->
+      <div data-category="ortho" class="service-card glass-card rounded-3xl overflow-hidden group flex flex-col justify-between">
+        <div>
+          <div class="h-52 overflow-hidden relative">
+            <img src="assets/images/dental-clinic.jpg" alt="ارتودنسی شفاف اینویزالاین" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 px-3 py-1 rounded-xl bg-teal-600 text-white text-xs font-bold shadow-md">
+              پلاک شفاف نامرئی
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-lg font-black text-slate-900 dark:text-white">ارتودنسی نامرئی و دیمون (Invisalign)</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              مرتب‌سازی اصولی فک و دندان‌ها بدون نیاز به سیم‌های فلزی زمخت، با استفاده از الاینرهای کاملاً نامرئی و شفاف قابل جابجایی.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-1">
+              <li class="flex items-center gap-1.5">✓ بدون ایجاد درد یا زخم در لثه و دهان</li>
+              <li class="flex items-center gap-1.5">✓ امکان برداشتن پلاک حین غذا خوردن و مسواک</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <button onclick="openBookingModal('مشاوره ارتودنسی نامرئی')" class="w-full py-2.5 rounded-xl text-xs font-bold border border-dental-500 text-dental-600 dark:text-dental-400 hover:bg-dental-500 hover:text-white transition-all">
+            دریافت نوبت و برآورد هزینه
+          </button>
+        </div>
+      </div>
+
+      <!-- خدمت ۴: دندانپزشکی اطفال -->
+      <div data-category="pediatric" class="service-card glass-card rounded-3xl overflow-hidden group flex flex-col justify-between">
+        <div>
+          <div class="h-52 overflow-hidden relative">
+            <img src="assets/images/kids-dentistry.jpg" alt="دندانپزشکی اطفال بدون ترس و استرس" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 px-3 py-1 rounded-xl bg-indigo-500 text-white text-xs font-bold shadow-md">
+              محیط شاد و بدون ترس
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-lg font-black text-slate-900 dark:text-white">دندانپزشکی تخصصی کودکان و نوجوانان</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              فلورایدتراپی، فیشورسیلانت و ترمیم دندان‌های شیری در محیطی آرام و صمیمی همراه با بازی و جایزه توسط متخصصین دندانپزشکی اطفال.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-1">
+              <li class="flex items-center gap-1.5">✓ درمان ریشه دندان شیری جهت حفظ فضای رشد</li>
+              <li class="flex items-center gap-1.5">✓ پیشگیری قطعی از پوسیدگی دندان‌های دائمی</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <button onclick="openBookingModal('مشاوره دندانپزشکی کودکان')" class="w-full py-2.5 rounded-xl text-xs font-bold border border-dental-500 text-dental-600 dark:text-dental-400 hover:bg-dental-500 hover:text-white transition-all">
+            دریافت نوبت و برآورد هزینه
+          </button>
+        </div>
+      </div>
+
+      <!-- خدمت ۵: درمان ریشه و عصب‌کشی تخصصی -->
+      <div data-category="implant" class="service-card glass-card rounded-3xl overflow-hidden group flex flex-col justify-between">
+        <div>
+          <div class="h-52 overflow-hidden relative">
+            <img src="assets/images/treatment-chair.jpg" alt="عصب‌کشی با میکروسکوپ جراحی" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 px-3 py-1 rounded-xl bg-blue-600 text-white text-xs font-bold shadow-md">
+              درمان روتاری با میکروسکوپ
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-lg font-black text-slate-900 dark:text-white">عصب‌کشی بدون درد (اندودنتیکس میکروسکوپی)</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              درمان ریشه دندان‌های پیچیده و جراحی مجدد با دستگاه روتاری مدرن و فایل‌های تیتانیومی در یک جلسه بدون کوچک‌ترین احساس درد.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-1">
+              <li class="flex items-center gap-1.5">✓ تسکین آنی درد شدید دندان با بی‌حسی هدفمند</li>
+              <li class="flex items-center gap-1.5">✓ حفظ دندان طبیعی و جلوگیری از کشیدن</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <button onclick="openBookingModal('مشاوره عصب‌کشی و تسکین درد')" class="w-full py-2.5 rounded-xl text-xs font-bold border border-dental-500 text-dental-600 dark:text-dental-400 hover:bg-dental-500 hover:text-white transition-all">
+            دریافت نوبت و برآورد هزینه
+          </button>
+        </div>
+      </div>
+
+      <!-- خدمت ۶: بلیچینگ و جرم‌گیری تخصصی -->
+      <div data-category="cosmetic" class="service-card glass-card rounded-3xl overflow-hidden group flex flex-col justify-between">
+        <div>
+          <div class="h-52 overflow-hidden relative">
+            <img src="assets/images/smile-after.jpg" alt="سفید کردن دندان با لیزر بلیچینگ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 px-3 py-1 rounded-xl bg-amber-500 text-white text-xs font-bold shadow-md">
+              روشن‌سازی تا ۵ درجه
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-lg font-black text-slate-900 dark:text-white">بلیچینگ لیزری و سفید کردن فوری دندان</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              رفع لکه‌های قهوه‌ای، زردی ناشی از چای، قهوه و دخانیات با ژل‌های ضد حساسیت آمریکایی و دستگاه تابش سرد لیزر در ۴۵ دقیقه.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-1">
+              <li class="flex items-center gap-1.5">✓ بدون کوچک‌ترین سایش یا حساسیت دندانی</li>
+              <li class="flex items-center gap-1.5">✓ به همراه پک محافظت خانگی (Home Bleaching)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <button onclick="openBookingModal('مشاوره بلیچینگ و سفید کردن دندان')" class="w-full py-2.5 rounded-xl text-xs font-bold border border-dental-500 text-dental-600 dark:text-dental-400 hover:bg-dental-500 hover:text-white transition-all">
+            دریافت نوبت و برآورد هزینه
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================================
+       7. محاسبه‌گر آنلاین هزینه و اقساط دندانپزشکی (Installment Calculator)
+       ========================================================================= -->
+  <section id="calculator" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+    
+    <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 text-xs font-bold">
+        <span>💳</span> درمان باکیفیت برای همه
+      </div>
+      <h2 class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">محاسبه‌گر هزینه درمان و اقساط ماهانه</h2>
+      <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+        نوع درمان و تعداد دندان‌های خود را انتخاب کنید تا مبلغ کل، پیش‌پرداخت و اقساط بدون کارمزد محاسبه شود.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- فرم ورودی ماشین حساب اقساط -->
+      <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-3xl space-y-6">
+        
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-200 mb-2">نوع درمان دندانپزشکی:</label>
+          <select id="calc-treatment" class="w-full p-3.5 rounded-2xl border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xs sm:text-sm font-semibold focus:outline-none focus:border-dental-500">
+            <option value="composite">ونیر کامپوزیت زیبایی (IPS نانوسرامیک آلمان) - واحدی ۳,۹۰۰,۰۰۰ تومان</option>
+            <option value="laminate">لمینت سرامیکی Emax خالص سوئیس - واحدی ۹,۸۰۰,۰۰۰ تومان</option>
+            <option value="implant">ایمپلنت دیجیتال فوری اشترومن سوئیس - واحدی ۱۸,۵۰۰,۰۰۰ تومان</option>
+            <option value="ortho">ارتودنسی نامرئی دو فک (Invisalign) - ۴۸,۰۰۰,۰۰۰ تومان</option>
+            <option value="bleaching">پکیج کامل بلیچینگ مطب + هوم - ۶,۵۰۰,۰۰۰ تومان</option>
+          </select>
+        </div>
+
+        <!-- انتخاب تعداد واحد دندان با اسلایدر -->
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <label class="text-xs font-bold text-slate-700 dark:text-slate-200">تعداد واحد دندان یا پایه:</label>
+            <span class="text-sm font-black text-dental-600 dark:text-dental-400 font-mono">
+              <span id="calc-units-display">۸</span> واحد
+            </span>
+          </div>
+          <input id="calc-units" type="range" min="1" max="16" value="8" class="w-full accent-dental-500 cursor-pointer">
+          <div class="flex justify-between text-[11px] text-slate-400 mt-1 font-mono">
+            <span>۱ واحد</span>
+            <span>۴ واحد</span>
+            <span>۸ واحد (خط لبخند)</span>
+            <span>۱۶ واحد (دو فک کامل)</span>
+          </div>
+        </div>
+
+        <!-- انتخاب طرح بازپرداخت -->
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-200 mb-3">طرح پرداخت مورد نظر:</label>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            
+            <label class="p-3.5 rounded-2xl border border-slate-200 dark:border-white/10 hover:border-dental-500 transition-all cursor-pointer flex items-center gap-3">
+              <input type="radio" name="calc-plan" value="cash" class="accent-dental-500">
+              <div>
+                <span class="text-xs font-bold block text-slate-900 dark:text-white">پرداخت نقدی</span>
+                <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold">۱۰٪ تخفیف ویژه</span>
+              </div>
+            </label>
+
+            <label class="p-3.5 rounded-2xl border border-dental-500 bg-dental-50/50 dark:bg-dental-950/20 transition-all cursor-pointer flex items-center gap-3">
+              <input type="radio" name="calc-plan" value="installment6" checked class="accent-dental-500">
+              <div>
+                <span class="text-xs font-bold block text-slate-900 dark:text-white">اقساط ۶ ماهه</span>
+                <span class="text-[10px] text-dental-600 dark:text-dental-400 font-semibold">بدون کارمزد</span>
+              </div>
+            </label>
+
+            <label class="p-3.5 rounded-2xl border border-slate-200 dark:border-white/10 hover:border-dental-500 transition-all cursor-pointer flex items-center gap-3">
+              <input type="radio" name="calc-plan" value="installment12" class="accent-dental-500">
+              <div>
+                <span class="text-xs font-bold block text-slate-900 dark:text-white">اقساط ۱۲ ماهه</span>
+                <span class="text-[10px] text-slate-500 dark:text-slate-400 font-semibold">تسهیلات بانکی</span>
+              </div>
+            </label>
+
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-slate-100 dark:bg-white/5 text-[11px] text-slate-500 dark:text-slate-400 flex items-center gap-2">
+          <span>ℹ️</span>
+          <span>دریافت اقساط با چک صیادی بنفش یا معرفی‌نامه سازمانی بدون نیاز به ضامن انجام می‌شود.</span>
+        </div>
+
+      </div>
+
+      <!-- نتایج محاسبه اقساط -->
+      <div class="lg:col-span-5 glass-card p-6 sm:p-8 rounded-3xl border border-dental-500/30 flex flex-col justify-between space-y-6">
+        <div>
+          <div class="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-white/10">
+            <h3 class="font-black text-base text-slate-900 dark:text-white">برآورد مالی طرح درمان شما</h3>
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-dental-500/10 text-dental-600 dark:text-dental-400 border border-dental-500/20">
+              بدون سود و بهره
+            </span>
+          </div>
+
+          <div class="space-y-4 pt-6">
+            
+            <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-100 dark:bg-white/5">
+              <span class="text-xs text-slate-600 dark:text-slate-400">پیش‌پرداخت در روز شروع درمان:</span>
+              <div class="font-mono font-bold text-slate-900 dark:text-white">
+                <span id="calc-result-down" class="text-base text-dental-600 dark:text-dental-400">۹,۳۶۰,۰۰۰</span>
+                <span class="text-xs font-sans text-slate-500">تومان</span>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-100 dark:bg-white/5">
+              <span class="text-xs text-slate-600 dark:text-slate-400">مبلغ هر قسط ماهانه:</span>
+              <div class="font-mono font-bold text-slate-900 dark:text-white">
+                <span id="calc-result-monthly" class="text-lg text-emerald-600 dark:text-emerald-400">۳,۶۴۰,۰۰۰</span>
+                <span class="text-xs font-sans text-slate-500">تومان</span>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-100 dark:bg-white/5">
+              <span class="text-xs text-slate-600 dark:text-slate-400">تعداد ماه‌های اقساط:</span>
+              <span id="calc-result-months" class="text-xs font-bold text-slate-900 dark:text-white font-mono">۶ ماه</span>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-gradient-to-br from-dental-500/10 to-medical-500/10 border border-dental-500/30 text-center">
+              <span class="text-xs text-slate-500 dark:text-slate-400 block mb-1">مبلغ کل برآورد درمان:</span>
+              <div class="text-2xl sm:text-3xl font-black font-mono text-slate-900 dark:text-white">
+                <span id="calc-result-total">۳۱,۲۰۰,۰۰۰</span>
+                <span class="text-xs font-sans text-dental-600 font-normal">تومان</span>
+              </div>
+              <span id="calc-discount-note" class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold block mt-1">
+                بدون سود و کارمزد با چک صیادی بنفش
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+        <button onclick="transferCalcToBooking()" class="w-full btn-medical py-3.5 rounded-2xl font-bold text-sm text-center flex items-center justify-center gap-2 cursor-pointer shadow-md">
+          <span>ثبت این طرح درمان و رزرو نوبت</span>
+          <span>←</span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================================
+       8. تیم پزشکان و اساتید دندانپزشکی (Doctors Team)
+       ========================================================================= -->
+  <section id="doctors" class="py-20 border-y border-slate-200 dark:border-white/5 bg-white/40 dark:bg-slate-900/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-medical-500/10 text-medical-600 dark:text-medical-400 border border-medical-500/20 text-xs font-bold">
+          <span>👨‍⚕️</span> کادر علمی و درمانی
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">پزشکان متخصص و اساتید کلینیک دُرسا</h2>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+          درمان‌های شما توسط برترین فارغ‌التحصیلان دانشگاه‌های شهید بهشتی و تهران با بورد تخصصی انجام می‌شود.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- پزشک ۱ -->
+        <div class="glass-card rounded-3xl overflow-hidden group text-center p-6 space-y-4">
+          <div class="w-36 h-36 mx-auto rounded-full overflow-hidden p-1 border-2 border-dental-500 shadow-xl group-hover:scale-105 transition-transform duration-300">
+            <img src="assets/images/doctor-female.jpg" alt="دکتر سارا رادمهر" class="w-full h-full object-cover rounded-full">
+          </div>
+          <div>
+            <h3 class="text-lg font-black text-slate-900 dark:text-white">دکتر سارا رادمهر</h3>
+            <span class="text-xs text-dental-600 dark:text-dental-400 font-bold block mt-0.5">فلوشیپ دندانپزشکی زیبایی و ترمیمی</span>
+            <span class="text-[11px] text-slate-500">شماره نظام پزشکی: ۱۳۴۸۹۰</span>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+            بیش از ۱۲ سال تجربه در طراحی دیجیتال خط لبخند (DSD)، ونیرهای سرامیکی بدون تراش و فیسینگ‌های تخصصی.
+          </p>
+          <button onclick="openBookingModal('نوبت ویزیت با دکتر سارا رادمهر')" class="w-full py-2 rounded-xl text-xs font-bold bg-slate-100 dark:bg-white/5 hover:bg-dental-500 hover:text-white transition-all text-slate-700 dark:text-slate-200">
+            رزرو نوبت با دکتر رادمهر
+          </button>
+        </div>
+
+        <!-- پزشک ۲ -->
+        <div class="glass-card rounded-3xl overflow-hidden group text-center p-6 space-y-4 border-dental-500/40">
+          <div class="w-36 h-36 mx-auto rounded-full overflow-hidden p-1 border-2 border-medical-500 shadow-xl group-hover:scale-105 transition-transform duration-300">
+            <img src="assets/images/doctor-male.jpg" alt="دکتر علی احسانی" class="w-full h-full object-cover rounded-full">
+          </div>
+          <div>
+            <h3 class="text-lg font-black text-slate-900 dark:text-white">دکتر علی احسانی</h3>
+            <span class="text-xs text-medical-600 dark:text-medical-400 font-bold block mt-0.5">متخصص جراحی دهان، فک و صورت و ایمپلنتولوژیست</span>
+            <span class="text-[11px] text-slate-500">شماره نظام پزشکی: ۱۰۹۴۵۵</span>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+            عضو انجمن ایمپلنتولوژی اروپا (EAO) و مبدع تکنیک جراحی ایمپلنت بدون شکاف و درد با هدایت سه‌بعدی.
+          </p>
+          <button onclick="openBookingModal('نوبت ویزیت با دکتر علی احسانی')" class="w-full py-2 rounded-xl text-xs font-bold bg-dental-500 text-white hover:bg-dental-600 transition-all">
+            رزرو نوبت با دکتر احسانی
+          </button>
+        </div>
+
+        <!-- پزشک ۳ -->
+        <div class="glass-card rounded-3xl overflow-hidden group text-center p-6 space-y-4">
+          <div class="w-36 h-36 mx-auto rounded-full overflow-hidden p-1 border-2 border-amber-500 shadow-xl group-hover:scale-105 transition-transform duration-300">
+            <img src="assets/images/doctor-specialist.jpg" alt="دکتر مریم ناصری" class="w-full h-full object-cover rounded-full">
+          </div>
+          <div>
+            <h3 class="text-lg font-black text-slate-900 dark:text-white">دکتر مریم ناصری</h3>
+            <span class="text-xs text-amber-600 dark:text-amber-400 font-bold block mt-0.5">متخصص ناهنجاری‌های فک و ارتودنسی نامرئی</span>
+            <span class="text-[11px] text-slate-500">شماره نظام پزشکی: ۱۱۸۷۴۰</span>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+            استاد دانشگاه و دارای مدرک بین‌المللی درمان با پلاک‌های شفاف Invisalign از سوئیس با بیش از ۱,۸۰۰ پرونده موفق.
+          </p>
+          <button onclick="openBookingModal('نوبت ویزیت با دکتر مریم ناصری')" class="w-full py-2 rounded-xl text-xs font-bold bg-slate-100 dark:bg-white/5 hover:bg-dental-500 hover:text-white transition-all text-slate-700 dark:text-slate-200">
+            رزرو نوبت با دکتر ناصری
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. تجهیزات های‌تک و فناوری‌های کلینیک (Clinic Tech Showcase)
+       ========================================================================= -->
+  <section id="tech" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+    
+    <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+      <h2 class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">فناوری‌های پیشرو در کلینیک دُرسا</h2>
+      <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+        تجربه درمانی بدون درد، سریع و با حداکثر دقت به لطف تجهیزات تشخیصی و درمانی مدرن
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <div class="p-6 rounded-3xl glass-card space-y-4">
+        <div class="w-12 h-12 rounded-2xl bg-dental-500/10 text-dental-600 flex items-center justify-center font-bold text-xl">
+          🔍
+        </div>
+        <h3 class="text-base font-bold text-slate-900 dark:text-white">اسکنر سه‌بعدی داخل دهانی iTero</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+          خداحافظی کامل با قالب‌گیری‌های سنتی گچی و حالت تهوع؛ ثبت دیجیتال هندسه دندان‌ها با دقت میکرونی در ۶۰ ثانیه.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-3xl glass-card space-y-4">
+        <div class="w-12 h-12 rounded-2xl bg-medical-500/10 text-medical-600 flex items-center justify-center font-bold text-xl">
+          ⚡
+        </div>
+        <h3 class="text-base font-bold text-slate-900 dark:text-white">لیزر دایود جراحی بدون خونریزی</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+          جراحی لثه، لیفت لثه جهت لبخند لثه‌ای و ضدعفونی کانال‌های ریشه بدون نیاز به تیغ جراحی، خونریزی و بدون درد پس از عمل.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-3xl glass-card space-y-4">
+        <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 flex items-center justify-center font-bold text-xl">
+          🛡️
+        </div>
+        <h3 class="text-base font-bold text-slate-900 dark:text-white">اتوکلاو بیمارستانی کلاس B Euronda</h3>
+        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+          بالاترین سطح استریلیزاسیون تجهیزات با بسته‌بندی‌های یکبار مصرف اختصاصی جهت تضمین عدم انتقال هرگونه ویروس و باکتری.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================================
+       10. پرسش‌های متداول بیماران (FAQ Accordion)
+       ========================================================================= -->
+  <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
+    
+    <div class="text-center mb-10 space-y-2">
+      <h2 class="text-xl sm:text-3xl font-black text-slate-900 dark:text-white">پرسش‌های متداول مراجعین</h2>
+      <p class="text-xs text-slate-500 dark:text-slate-400">پاسخ به سوالات پرتکرار شما درباره درمان‌های کلینیک دُرسا</p>
+    </div>
+
+    <div class="space-y-3">
+      
+      <div class="faq-item glass-card rounded-2xl overflow-hidden">
+        <button class="faq-trigger w-full p-4 text-right flex items-center justify-between text-xs sm:text-sm font-bold text-slate-900 dark:text-white hover:text-dental-600 transition-colors">
+          <span>آیا کاشت ایمپلنت در کلینیک دُرسا واقعاً بدون درد انجام می‌شود؟</span>
+          <span class="faq-arrow transition-transform duration-300">▼</span>
+        </button>
+        <div class="faq-content hidden px-4 pb-4 text-xs text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200 dark:border-white/5 pt-3">
+          بله، با استفاده از سیستم بی‌حسی کامپیوتری دیجیتال و متد فلپ‌لس (بدون برش لثه با راهنمای سه‌بعدی)، بیمار حین کار و پس از آن هیچ دردی احساس نمی‌کند و دوران نقاهت به صفر می‌رسد.
+        </div>
+      </div>
+
+      <div class="faq-item glass-card rounded-2xl overflow-hidden">
+        <button class="faq-trigger w-full p-4 text-right flex items-center justify-between text-xs sm:text-sm font-bold text-slate-900 dark:text-white hover:text-dental-600 transition-colors">
+          <span>تفاوت لمینت سرامیکی و ونیر کامپوزیت چیست و کدام بهتر است؟</span>
+          <span class="faq-arrow transition-transform duration-300">▼</span>
+        </button>
+        <div class="faq-content hidden px-4 pb-4 text-xs text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200 dark:border-white/5 pt-3">
+          کامپوزیت در یک جلسه توسط پزشک فرم داده می‌شود و هزینه کمتری دارد، اما لمینت سرامیکی در لابراتوار از جنس شیشه فشرده پخته می‌شود، درخشندگی طبیعی‌تری دارد، هرگز رنگ نمی‌گیرد و ماندگاری آن بالای ۱۵ سال است.
+        </div>
+      </div>
+
+      <div class="faq-item glass-card rounded-2xl overflow-hidden">
+        <button class="faq-trigger w-full p-4 text-right flex items-center justify-between text-xs sm:text-sm font-bold text-slate-900 dark:text-white hover:text-dental-600 transition-colors">
+          <span>شرایط پرداخت اقساطی به چه صورت است و آیا نیاز به ضامن دارد؟</span>
+          <span class="faq-arrow transition-transform duration-300">▼</span>
+        </button>
+        <div class="faq-content hidden px-4 pb-4 text-xs text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200 dark:border-white/5 pt-3">
+          پرداخت اقساط ۶ ماهه بدون هیچ سود و کارمزدی انجام می‌شود. ۳۰٪ مبلغ به عنوان پیش‌پرداخت دریافت شده و مابقی با چک‌های صیادی بنفش ماهانه یا دوماهانه تسویه می‌گردد و نیازی به ضامن نیست.
+        </div>
+      </div>
+
+      <div class="faq-item glass-card rounded-2xl overflow-hidden">
+        <button class="faq-trigger w-full p-4 text-right flex items-center justify-between text-xs sm:text-sm font-bold text-slate-900 dark:text-white hover:text-dental-600 transition-colors">
+          <span>آیا با بیمه‌های تکمیلی قرارداد دارید؟</span>
+          <span class="faq-arrow transition-transform duration-300">▼</span>
+        </button>
+        <div class="faq-content hidden px-4 pb-4 text-xs text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-200 dark:border-white/5 pt-3">
+          بله، برای کلیه درمان‌های درمانی (عصب‌کشی، پرکردن، جراحی دندان عقل و ایمپلنت) گواهی رسمی معتبر با شرح درمان و عکس‌های رادیوگرافی صادر می‌شود تا هزینه را از بیمه تکمیلی خود دریافت نمایید.
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================================
+       11. تماس، نقشه و آدرس کلینیک (Contact & Location)
+       ========================================================================= -->
+  <section id="contact" class="py-20 border-t border-slate-200 dark:border-white/5 bg-slate-100 dark:bg-slate-900/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-bold">
+            <span>●</span> پذیرش مراجعین با تعیین وقت قبلی
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">تماس و موقعیت کلینیک دُرسا</h2>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            کلینیک در منطقه سعادت‌آباد تهران با دسترسی آسان به بزرگراه‌های یادگار امام و چمران و دارای پارکینگ اختصاصی برای مراجعین گرامی واقع شده است.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <div class="flex items-start gap-3.5 p-4 rounded-2xl glass-card">
+              <span class="text-xl text-dental-600">📞</span>
+              <div>
+                <span class="text-xs text-slate-500 dark:text-slate-400 block font-bold">تلفن‌های تماس پذیرش:</span>
+                <span class="text-sm font-black text-slate-900 dark:text-white font-mono" dir="ltr">۰۲۱-۲۲۳۳۴۴۵۵ | ۰۲۱-۲۲۳۳۴۴۶۶</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5 p-4 rounded-2xl glass-card">
+              <span class="text-xl text-emerald-500">📱</span>
+              <div>
+                <span class="text-xs text-slate-500 dark:text-slate-400 block font-bold">مشاوره آنلاین و واتساپ:</span>
+                <span class="text-sm font-black text-emerald-600 dark:text-emerald-400 font-mono" dir="ltr">۰۹۳۹۴۶۰۶۰۱۳</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5 p-4 rounded-2xl glass-card">
+              <span class="text-xl text-cyan-600">📍</span>
+              <div>
+                <span class="text-xs text-slate-500 dark:text-slate-400 block font-bold">نشانی مطب مرکزی:</span>
+                <span class="text-xs text-slate-700 dark:text-slate-200">تهران، سعادت‌آباد، میدان کاج، خیابان سرو شرقی، پلاک ۴۲، ساختمان پزشکان پارسیان، طبقه ۳، کلینیک دُرسا</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- فرم درخواست نوبت -->
+        <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-3xl shadow-xl">
+          <h3 class="font-black text-lg text-slate-900 dark:text-white mb-2">ثبت مستقیم درخواست نوبت و مشاوره</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mb-6">مشخصات خود را وارد کنید تا کارشناسان پذیرش در کمتر از ۱۵ دقیقه با شما تماس بگیرند.</p>
+
+          <form onsubmit="submitBookingForm(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">نام و نام خانوادگی:</label>
+                <input id="book-name" type="text" required placeholder="مثال: مریم کریمی" class="w-full p-3 rounded-xl border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-900 text-xs">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">شماره همراه (واتساپ):</label>
+                <input id="book-phone" type="tel" required placeholder="۰۹۱۲..." class="w-full p-3 rounded-xl border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-900 text-xs font-mono text-left" dir="ltr">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">خدمت مورد نظر:</label>
+                <select id="book-service" class="w-full p-3 rounded-xl border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-900 text-xs">
+                  <option value="طراحی لبخند و کامپوزیت">طراحی لبخند و کامپوزیت</option>
+                  <option value="لمینت سرامیکی Emax">لمینت سرامیکی Emax</option>
+                  <option value="ایمپلنت دیجیتال فوری">ایمپلنت دیجیتال فوری</option>
+                  <option value="ارتودنسی نامرئی">ارتودنسی نامرئی</option>
+                  <option value="عصب‌کشی بدون درد">عصب‌کشی بدون درد</option>
+                  <option value="معاینه و ویزیت عمومی">معاینه و ویزیت عمومی</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">پزشک معالج:</label>
+                <select id="book-doctor" class="w-full p-3 rounded-xl border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-900 text-xs">
+                  <option value="اولین پزشک متخصص در دسترس">اولین متخصص در دسترس</option>
+                  <option value="دکتر سارا رادمهر (زیبایی)">دکتر سارا رادمهر (زیبایی)</option>
+                  <option value="دکتر علی احسانی (جراح فک و ایمپلنت)">دکتر علی احسانی (ایمپلنت)</option>
+                  <option value="دکتر مریم ناصری (ارتودنسی)">دکتر مریم ناصری (ارتودنسی)</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">شیفت ترجیحی:</label>
+                <select id="book-shift" class="w-full p-3 rounded-xl border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-900 text-xs">
+                  <option value="عصر (۱۵ الی ۲۱)">عصر (۱۵ الی ۲۱)</option>
+                  <option value="صبح (۹ الی ۱۳)">صبح (۹ الی ۱۳)</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">توضیحات تکمیلی یا سابقه دندانپزشکی:</label>
+              <textarea id="book-notes" rows="2" placeholder="اگر سابقه حساسیت دارویی دارید یا روز خاصی مدنظرتان است بنویسید..." class="w-full p-3 rounded-xl border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-900 text-xs"></textarea>
+            </div>
+
+            <button type="submit" class="w-full btn-medical py-3.5 rounded-2xl font-bold text-sm text-center flex items-center justify-center gap-2 cursor-pointer shadow-md">
+              <span>تایید و ارسال درخواست نوبت در واتساپ</span>
+              <span>←</span>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. فوتر ویژه با کارت معرفی آراد وفایی (Developer Showcase Footer)
+       ========================================================================= -->
+  <footer class="relative border-t border-slate-200 dark:border-white/10 pt-16 pb-12 overflow-hidden bg-white dark:bg-slate-950 text-slate-600 dark:text-slate-400">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <!-- ۴ ستون مشخصات کلینیک -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-slate-200 dark:border-white/10">
+        
+        <!-- ستون ۱ -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-dental-500 to-medical-600 flex items-center justify-center text-white font-bold text-base shadow-md">
+              D
+            </div>
+            <div>
+              <span class="text-base font-black text-slate-900 dark:text-white block">کلینیک دُرسا</span>
+              <span class="text-[11px] text-dental-600 dark:text-dental-400 font-semibold">پروانه تخصصی وزارت بهداشت</span>
+            </div>
+          </div>
+          <p class="text-xs leading-relaxed">
+            ارائه کلیه خدمات تخصصی دندانپزشکی دیجیتال، ایمپلنت بدون درد و زیبایی لبخند در محیطی استاندارد با استریلیزاسیون کامل.
+          </p>
+          <div class="flex items-center gap-2 text-xs text-emerald-600 dark:text-emerald-400 font-semibold">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>طرف قرارداد با تمامی بیمه‌های تکمیلی</span>
+          </div>
+        </div>
+
+        <!-- ستون ۲: دسترسی سریع -->
+        <div class="space-y-3">
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">دسترسی سریع</p>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#hero" class="hover:text-dental-600 transition-colors">صفحه اصلی</a></li>
+            <li><a href="#services" class="hover:text-dental-600 transition-colors">خدمات دندانپزشکی</a></li>
+            <li><a href="#transformation" class="hover:text-dental-600 transition-colors text-amber-600 dark:text-amber-400 font-bold">اسلایدر قبل و بعد لبخند</a></li>
+            <li><a href="#calculator" class="hover:text-dental-600 transition-colors">محاسبه اقساط ماهیانه</a></li>
+            <li><a href="#doctors" class="hover:text-dental-600 transition-colors">تیم پزشکان متخصص</a></li>
+            <li><a href="#contact" class="hover:text-dental-600 transition-colors">آدرس و رزرو نوبت</a></li>
+          </ul>
+        </div>
+
+        <!-- ستون ۳: خدمات پرطرفدار -->
+        <div class="space-y-3">
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">درمان‌های تخصصی</p>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#services" class="hover:text-dental-600 transition-colors">ایمپلنت دیجیتال سوئیسی</a></li>
+            <li><a href="#services" class="hover:text-dental-600 transition-colors">لمینت سرامیکی Emax</a></li>
+            <li><a href="#services" class="hover:text-dental-600 transition-colors">ونیر کامپوزیت نانو سرامیک</a></li>
+            <li><a href="#services" class="hover:text-dental-600 transition-colors">ارتودنسی نامرئی شفاف</a></li>
+            <li><a href="#services" class="hover:text-dental-600 transition-colors">عصب‌کشی با روتاری میکروسکوپی</a></li>
+            <li><a href="#services" class="hover:text-dental-600 transition-colors">دندانپزشکی اطفال بدون ترس</a></li>
+          </ul>
+        </div>
+
+        <!-- ستون ۴: ساعات کاری و تماس -->
+        <div class="space-y-3">
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">پذیرش و نوبت‌دهی</p>
+          <div class="text-xs space-y-2">
+            <p class="flex items-center gap-2">
+              <span class="text-dental-600 font-bold">تلفن مطب:</span>
+              <span dir="ltr" class="font-mono font-bold text-slate-900 dark:text-white">۰۲۱-۲۲۳۳۴۴۵۵</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="text-emerald-600 font-bold">مشاوره واتساپ:</span>
+              <span dir="ltr" class="font-mono text-emerald-600 dark:text-emerald-400 font-bold">۰۹۳۹۴۶۰۶۰۱۳</span>
+            </p>
+            <p class="text-slate-500 text-[11px] leading-relaxed">
+              شنبه تا پنجشنبه: ۹:۰۰ الی ۲۱:۰۰ به صورت یکسره
+            </p>
+          </div>
+          <button onclick="openBookingModal()" class="w-full mt-2 py-2 rounded-xl text-xs font-bold bg-dental-50 dark:bg-white/5 hover:bg-dental-100 text-dental-700 dark:text-dental-300 border border-dental-200 dark:border-white/10 transition-all">
+            درخواست وقت ویزیت آنلاین
+          </button>
+        </div>
+
+      </div>
+
+      <!-- =====================================================================
+           کارت اختصاصی و مجلل آراد وفایی (Developer Showcase)
+           برگرفته از aradvafaee.ir
+           ===================================================================== -->
+      <div class="developer-card p-6 sm:p-8 rounded-3xl border transition-all duration-300">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          
+          <!-- مشخصات و تصویر آراد وفایی -->
+          <div class="lg:col-span-8 flex flex-col sm:flex-row items-center sm:items-start gap-5 text-center sm:text-right">
+            
+            <div class="relative w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0">
+              <div class="w-full h-full rounded-2xl p-1 border-2 border-dental-500 bg-white dark:bg-slate-900 shadow-xl overflow-hidden group">
+                <img src="assets/images/arad-avatar.webp" alt="آراد وفایی | Arad Vafaee" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300">
+              </div>
+              <span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white dark:border-slate-900 animate-pulse"></span>
+            </div>
+
+            <div class="space-y-1.5">
+              <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                <span class="text-lg font-black text-slate-900 dark:text-white">طراحی و توسعه وب‌سایت: آراد وفایی</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-dental-500/10 text-dental-600 dark:text-dental-400 border border-dental-500/20">
+                  Full-Stack Web Architect
+                </span>
+              </div>
+              
+              <p class="text-xs text-dental-600 dark:text-dental-400 font-semibold">
+                معمار وب‌سایت‌های فوق‌سریع و پزشکی لوکس | رتبه ۱ گوگل در ۱۲ ساعت | متخصص سئو هوش مصنوعی (AEO & GEO)
+              </p>
+              
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl pt-1">
+                من <strong class="text-slate-900 dark:text-white">آراد وفایی</strong> هستم؛ این وب‌سایت بر اساس بالاترین استانداردهای UI/UX پزشکی با لود زیر ۱ ثانیه، انیمیشن‌های نرم ۶۰ فریم و اسلایدرهای اختصاصی مقایسه درمان پیاده‌سازی شده است.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- دکمه‌ها و لینک‌های شبکه‌های اجتماعی آراد وفایی -->
+          <div class="lg:col-span-4 flex flex-col items-center lg:items-end gap-3 w-full">
+            <a href="https://aradvafaee.ir" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-dental-600 hover:bg-dental-500 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md shadow-dental-500/20 transition-all hover:scale-105">
+              <span>مشاهده پورتفولیو در aradvafaee.ir</span>
+              <span>↗</span>
+            </a>
+
+            <!-- آیکون‌های معتبر -->
+            <div class="flex items-center gap-2">
+              
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/aradvafaee" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 hover:border-[#0A66C2] hover:text-[#0A66C2] transition-all" title="LinkedIn" aria-label="LinkedIn">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.738-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/v1rango" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 hover:border-slate-900 hover:text-slate-900 dark:hover:text-white transition-all" title="GitHub" aria-label="GitHub">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+
+              <!-- Telegram -->
+              <a href="https://t.me/v1arad" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 hover:border-[#229ED9] hover:text-[#229ED9] transition-all" title="Telegram" aria-label="Telegram">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.832.942z"/></svg>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://instagram.com/v1arad" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 hover:border-[#E4405F] hover:text-[#E4405F] transition-all" title="Instagram" aria-label="Instagram">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+
+              <!-- WhatsApp -->
+              <a href="https://wa.me/989394606013" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 hover:border-[#25D366] hover:text-[#25D366] transition-all" title="WhatsApp" aria-label="WhatsApp">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              </a>
+
+            </div>
+
+            <span class="text-[11px] text-slate-400 font-mono" dir="ltr">Direct: +98 939 460 6013</span>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- کپی رایت نهایی و بازگشت به بالا -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 pt-4">
+        <p>© ۱۴۰۵ تمامی حقوق مادی و معنوی برای «کلینیک تخصصی دندانپزشکی دُرسا» محفوظ است. توسعه فنی توسط آراد وفایی.</p>
+        
+        <button id="back-to-top-btn" class="flex items-center gap-2 text-slate-500 hover:text-dental-600 transition-all opacity-0 pointer-events-none group cursor-pointer" aria-label="بازگشت به ابتدای صفحه">
+          <span>بازگشت به بالا</span>
+          <div class="p-1.5 rounded-lg border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-white/5 group-hover:border-dental-500">
+            ▲
+          </div>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       13. مودال تعاملی رزرو نوبت (Online Booking Modal)
+       ========================================================================= -->
+  <div id="booking-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md items-center justify-center p-4">
+    <div class="glass-card max-w-lg w-full rounded-3xl p-6 sm:p-8 border border-dental-500/30 relative shadow-2xl animate-float">
+      
+      <button onclick="closeBookingModal()" class="absolute top-5 left-5 p-2 text-slate-400 hover:text-slate-900 dark:hover:text-white rounded-xl bg-slate-100 dark:bg-white/10 text-xs font-bold" aria-label="بستن">✕</button>
+
+      <div class="space-y-1 mb-6">
+        <span class="text-xs font-bold text-dental-600 dark:text-dental-400">کلینیک فوق‌تخصصی دُرسا</span>
+        <h3 class="text-xl font-black text-slate-900 dark:text-white">رزرو آنلاین نوبت و معاینه اولیه</h3>
+      </div>
+
+      <form onsubmit="submitBookingForm(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">نام و نام خانوادگی بیمار:</label>
+          <input type="text" id="modal-book-name" required placeholder="مثال: زهرا مرادی" class="w-full p-3 rounded-xl border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">شماره همراه (جهت تایید نوبت):</label>
+          <input type="tel" id="modal-book-phone" required placeholder="۰۹۱۲۳۴۵۶۷۸۹" class="w-full p-3 rounded-xl border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-900 text-xs font-mono text-left" dir="ltr">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">شرح خدمات یا زمان مدنظر:</label>
+          <textarea id="modal-book-notes" rows="3" class="w-full p-3 rounded-xl border border-slate-300 dark:border-white/10 bg-white dark:bg-slate-900 text-xs text-slate-900 dark:text-white" placeholder="درمان مدنظر (مثلاً لمینت، ایمپلنت، عصب‌کشی) و روز پیشنهادی خود را بنویسید..."></textarea>
+        </div>
+
+        <div class="pt-2 flex items-center gap-3">
+          <button type="submit" class="flex-1 btn-medical py-3.5 rounded-xl font-bold text-xs sm:text-sm text-center flex items-center justify-center gap-2 cursor-pointer shadow-md">
+            <span>تایید و ارسال نوبت به پذیرش واتساپ</span>
+            <span>←</span>
+          </button>
+          <button type="button" onclick="closeBookingModal()" class="px-4 py-3.5 rounded-xl border border-slate-200 dark:border-white/10 text-xs font-bold text-slate-600 dark:text-slate-300">
+            انصراف
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- اسکریپت جاوااسکریپت کلینیک دُرسا -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
